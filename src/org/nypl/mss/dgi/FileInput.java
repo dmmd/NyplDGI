@@ -30,20 +30,20 @@ public class FileInput {
         List<IdentificationResult> resultList = bin.getResultList();
         List<IdentificationResult> extResultList = bin.getExtResultList();
         if(resultList.size() == 1){
-            System.out.println("droid6-match: true");
-            System.out.println("droid6-puid: " + resultList.get(0).getPuid());
-            System.out.println("droid6-mimeType: " + resultList.get(0).getMimeType());
-            System.out.println("droid6-method: binary signature" );
+            System.out.println("droidMatch: true");
+            System.out.println("droidPuid: " + resultList.get(0).getPuid());
+            System.out.println("droidMimeType: " + resultList.get(0).getMimeType());
+            System.out.println("droidMethod: binary signature" );
         }
         if(resultList.isEmpty()){
             if(extResultList.isEmpty()){
-                System.out.println("droid6-match: false");
+                System.out.println("droidMatch: false");
             }
             else{
-                System.out.println("droid6-match: true");
-                System.out.println("droid6-puid: " + extResultList.get(0).getPuid());
-                System.out.println("droid6-mimeType: " + extResultList.get(0).getMimeType());
-                System.out.println("droid6-method: extension" );
+                System.out.println("droidMatch: true");
+                System.out.println("droidPuid: " + extResultList.get(0).getPuid());
+                System.out.println("droidMimeType: " + extResultList.get(0).getMimeType());
+                System.out.println("droidMethod: extension" );
             }
         }
     }
