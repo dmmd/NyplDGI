@@ -61,11 +61,11 @@ public class FileInput {
         Matcher matcher = pattern.matcher(result.getResult());
         
         if(matcher.find()){
-            System.out.println("virusFound: Found");
+            System.out.println("virusFound: true");
             System.out.println("VirusSignature: " + result.getSignature());
         }
         else{
-            System.out.println("virusFound: Not Found");
+            System.out.println("virusFound: false");
         }
     }
     
