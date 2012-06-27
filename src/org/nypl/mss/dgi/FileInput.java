@@ -10,12 +10,10 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.maven.wagon.CommandExecutionException;
 import uk.gov.nationalarchives.droid.core.interfaces.IdentificationResult;
-import uk.gov.nationalarchives.droid.core.signature.FileFormat;
-import uk.gov.nationalarchives.droid.core.signature.FileFormatHit;
 
 public class FileInput {
     private File file;
-    private String sigFile;
+    private String sigFile = "/Users/dm/.droid6/signature_files/DROID_SignatureFile_V60.xml";
     private String host;
     private int port;
     private int timeout;
@@ -24,7 +22,7 @@ public class FileInput {
         this.file = new File(fileIn);
         
         if(this.file.exists()){
-            getProps();
+            //getProps();
             droid6();
             clamav();
         } else {
