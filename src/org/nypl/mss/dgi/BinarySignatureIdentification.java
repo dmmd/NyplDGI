@@ -16,7 +16,7 @@ import uk.gov.nationalarchives.droid.core.interfaces.resource.RequestMetaData;
 public class BinarySignatureIdentification {
     
     private BinarySignatureIdentifier binarySignatureIdentifier;
-    private String signatureFile = "/Users/dm/.droid6/signature_files/DROID_SignatureFile_V59.xml";
+    private String signatureFile;
     private Logger logger, logger2;
     private List<IdentificationResult> resultList;
     private List<IdentificationResult> extResultList;
@@ -84,11 +84,12 @@ public class BinarySignatureIdentification {
                 request = new FileSystemIdentificationRequest(metaData, identifier);
 
                 request.open(in);
-
+                
                 IdentificationResultCollection results =
                     binarySignatureIdentifier.matchBinarySignatures(request);
-                
+                binarySignatureIdentifier.checkForExtensionsMismatches(results, signatureFile);
                 binarySignatureIdentifier.removeLowerPriorityHits(results);
+                
                 resultList = results.getResults();
                 
                 

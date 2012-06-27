@@ -10,6 +10,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.maven.wagon.CommandExecutionException;
 import uk.gov.nationalarchives.droid.core.interfaces.IdentificationResult;
+import uk.gov.nationalarchives.droid.core.signature.FileFormat;
+import uk.gov.nationalarchives.droid.core.signature.FileFormatHit;
 
 public class FileInput {
     private File file;
@@ -36,10 +38,17 @@ public class FileInput {
         List<IdentificationResult> resultList = bin.getResultList();
         List<IdentificationResult> extResultList = bin.getExtResultList();
         if(resultList.size() == 1){
+            IdentificationResult result = resultList.get(0);
+ 
+            
             System.out.println("droidMatch: true");
-            System.out.println("droidPuid: " + resultList.get(0).getPuid());
-            System.out.println("droidMimeType: " + resultList.get(0).getMimeType());
+            System.out.println("droidPuid: " + result.getPuid());
+            System.out.println("droidMimeType: " + result.getMimeType());
             System.out.println("droidMethod: binary signature" );
+            if(result.getName() != null)
+            System.out.println("droidFileName: " + result.getName());
+            if(result.getVersion() != null)
+            System.out.println("droidFileVersion: " + result.getVersion());
         }
         if(resultList.isEmpty()){
             if(extResultList.isEmpty()){
