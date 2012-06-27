@@ -41,22 +41,29 @@ public class FileInput {
             
             System.out.println("droidMatch: true");
             System.out.println("droidPuid: " + result.getPuid());
+            if(result.getMimeType() != null)
             System.out.println("droidMimeType: " + result.getMimeType());
-            System.out.println("droidMethod: binary signature" );
             if(result.getName() != null)
             System.out.println("droidFileName: " + result.getName());
             if(result.getVersion() != null)
             System.out.println("droidFileVersion: " + result.getVersion());
+            System.out.println("droidIdentificationMethod: binary signature" );
         }
         if(resultList.isEmpty()){
             if(extResultList.isEmpty()){
                 System.out.println("droidMatch: false");
             }
             else{
+                IdentificationResult result = extResultList.get(0);
                 System.out.println("droidMatch: true");
-                System.out.println("droidPuid: " + extResultList.get(0).getPuid());
-                System.out.println("droidMimeType: " + extResultList.get(0).getMimeType());
-                System.out.println("droidMethod: extension" );
+                System.out.println("droidPuid: " + result.getPuid());
+                    if(result.getMimeType() != null)
+                System.out.println("droidMimeType: " + result.getMimeType());
+                    if(result.getName() != null)
+                System.out.println("droidFileName: " + result.getName());
+                    if(result.getVersion() != null)
+                System.out.println("droidFileVersion: " + result.getVersion());
+                System.out.println("droidIdentificationMethod: extension" );
             }
         }
     }
