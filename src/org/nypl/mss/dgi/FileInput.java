@@ -2,6 +2,7 @@ package org.nypl.mss.dgi;
 
 import java.io.*;
 import java.util.List;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.log4j.BasicConfigurator;
@@ -12,21 +13,26 @@ import uk.gov.nationalarchives.droid.core.interfaces.IdentificationResult;
 
 public class FileInput {
     private File file;
+    private String sigFile;
+    private String host;
+    private int port;
+    private int timeout;
     
     FileInput(String fileIn) throws FileNotFoundException, IOException, CommandExecutionException{
-
         this.file = new File(fileIn);
+        
         if(this.file.exists()){
+            getProps();
             droid6();
             clamav();
         } else {
-            System.out.println("nypldgi: error");
+            System.exit(0);
         }
         
     }
 
     private void droid6() throws FileNotFoundException, IOException, CommandExecutionException {
-        BinarySignatureIdentification bin = new BinarySignatureIdentification(file);
+        BinarySignatureIdentification bin = new BinarySignatureIdentification(file, sigFile);
         List<IdentificationResult> resultList = bin.getResultList();
         List<IdentificationResult> extResultList = bin.getExtResultList();
         if(resultList.size() == 1){
@@ -69,8 +75,17 @@ public class FileInput {
         }
     }
     
-    public static void main(String[] args) throws FileNotFoundException, IOException, CommandExecutionException{
-        String filename = args[0];
-        FileInput f = new FileInput(filename);
+    private void getProps() throws FileNotFoundException, IOException {
+        Properties prop = new Properties();
+        prop.load(new FileInputStream("nyplDgiProps.properties"));
+        
+        sigFile = prop.getProperty("droidSignatureFileLoc");
+        host = prop.getProperty("clamavHost");
+        port = Integer.parseInt(prop.getProperty("clamavPort"));
+        timeout = Integer.parseInt(prop.getProperty("clamavTimeout"));
     }
+    
+    public static void main(String[] args) throws FileNotFoundException, IOException, CommandExecutionException{
+        FileInput f = new FileInput(args[0]);
+    }  
 }

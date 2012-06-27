@@ -16,14 +16,15 @@ import uk.gov.nationalarchives.droid.core.interfaces.resource.RequestMetaData;
 public class BinarySignatureIdentification {
     
     private BinarySignatureIdentifier binarySignatureIdentifier;
-    private final String signatureFile = "/Users/dm/.droid6/signature_files/DROID_SignatureFile_V59.xml";
+    private String signatureFile = "/Users/dm/.droid6/signature_files/DROID_SignatureFile_V59.xml";
     private Logger logger, logger2;
     private List<IdentificationResult> resultList;
     private List<IdentificationResult> extResultList;
     private File fileIn;
     
-    public BinarySignatureIdentification(File fileIn) throws FileNotFoundException, IOException, CommandExecutionException {
+    public BinarySignatureIdentification(File fileIn, String signatureFile) throws FileNotFoundException, IOException, CommandExecutionException {
         this.fileIn = fileIn;
+        this.signatureFile = signatureFile;
         initLogger();
         initBin();
         matchBinary();
