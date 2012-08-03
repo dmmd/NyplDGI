@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml version='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>fiwalk</program>
+    <version>0.6.16</version>
+    <build_environment>
+      <compiler>GCC 4.2</compiler>
+      <library name="tsk" version="3.2.3"/>
+      <library name="afflib" version="3.7.1"/>
+      <library name="libewf" version="20100226"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Darwin</os_sysname>
+      <os_release>10.8.0</os_release>
+      <os_version>Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386</os_version>
+      <host>mss-e.local</host>
+      <arch>i386</arch>
+      <command_line>fiwalk -fxc ficonfig.txt /Volumes/Staging/Imaging_Workflow/B.Needs_Metadata/M1126/M1126-0020.001</command_line>
+      <start_time>2012-08-03T15:52:44Z</start_time>
+    </execution_environment>
+  </creator>
+<!-- Reading configuration file ficonfig.txt -->
+<!-- pattern: *  method: dgi  path: java -jar ~/Projects/NyplDGI/dist/MssDGI.jar -->
+  <source>
+    <image_filename>/Volumes/Staging/Imaging_Workflow/B.Needs_Metadata/M1126/M1126-0020.001</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>512</block_size>
+    <ftype>2</ftype>
+    <ftype_str>fat12</ftype_str>
+    <block_count>2400</block_count>
+    <first_block>0</first_block>
+    <last_block>2399</last_block>
+    <fileobject>
+      <filename>BUDGET3.DOC</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-24T17:31:42Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='14848' img_offset='14848' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'>f421747fdb6829eea3f19fce7da604d3</hashdigest>
+      <hashdigest type='sha1'>b5d72583fea437ca9e64732dda3eecdc5bcdbc7a</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>ANDRIAS.DOC</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-07-23T15:48:20Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='17408' img_offset='17408' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>6ac9af6c2fe2d547a58eba98d8f1d688</hashdigest>
+      <hashdigest type='sha1'>8bdcd39bfff91512b4b7a7999b3152213bf13700</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PWAN8-7.DOC</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-08-07T15:33:56Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='18944' img_offset='18944' len='2048'/>
+      </byte_runs>
+      <hashdigest type='md5'>3e397aa5733c11b7f885d56724b9c38a</hashdigest>
+      <hashdigest type='sha1'>90fae1379e8b545eeaad1d4a01a855a4e900e6f2</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NIH.DOC</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>4992</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-07-09T14:15:18Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='20992' img_offset='20992' len='4992'/>
+      </byte_runs>
+      <hashdigest type='md5'>41f39e40ef41b80c07a05a3698221ffd</hashdigest>
+      <hashdigest type='sha1'>93d81edeec44ae336413c44142d61146efa2fc15</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PURDUE.DOC</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>1920</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-08-08T20:33:32Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='26112' img_offset='26112' len='1920'/>
+      </byte_runs>
+      <hashdigest type='md5'>afd69b3416629740564276b5215b2299</hashdigest>
+      <hashdigest type='sha1'>d4c6dcdc95e739fdd5e70620b41bba2b3782ba14</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>LETTER.DOC</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>r</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-10T19:11:12Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='28160' img_offset='28160' len='2048'/>
+      </byte_runs>
+      <hashdigest type='md5'>58b6ee2308b6ae5971090be2d6c69e3c</hashdigest>
+      <hashdigest type='sha1'>b3d44b76c94d65c38689e1a7d6ebbceb1726d325</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>MEMO7-29.DOC</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>r</name_type>
+      <filesize>1920</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>9</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-07-29T17:35:02Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='30208' img_offset='30208' len='1920'/>
+      </byte_runs>
+      <hashdigest type='md5'>108713710f3633fe008c1a49a522ec97</hashdigest>
+      <hashdigest type='sha1'>a16e8b9ddfa8a5425cfb2955395a349bb6b064e3</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>ANDRIAS2.DOC</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-08-08T20:05:54Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='32256' img_offset='32256' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>a0b290334b5bf5426ce13f38d4eb9cfb</hashdigest>
+      <hashdigest type='sha1'>e5bc1c87d19e1329888585f4ca072668f34b096f</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NASLECT.DOC</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>r</name_type>
+      <filesize>8576</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-08-30T03:32:58Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='33792' img_offset='33792' len='8576'/>
+      </byte_runs>
+      <hashdigest type='md5'>d9f16d186c7b2d1c77a5878e02a88689</hashdigest>
+      <hashdigest type='sha1'>e2af0903300822f90c400a1c68fe062979506eee</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NAT10-23.DOC</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>r</name_type>
+      <filesize>3200</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>12</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-10-23T19:38:34Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='42496' img_offset='42496' len='3200'/>
+      </byte_runs>
+      <hashdigest type='md5'>7b183fa0b5b6b20b01341ccd9610da2f</hashdigest>
+      <hashdigest type='sha1'>21ddaf3d96a15284ad963e21bfebf5ed0177bc0d</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>BIOLAB.DOC</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>13</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-10-23T21:20:58Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='46080' img_offset='46080' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>f6c0355cde744b5e4459f0fd8a9527ff</hashdigest>
+      <hashdigest type='sha1'>ed1856ffc17d31cd19b55b40bc3b823c0f1664e6</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>ROUTE.DOC</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>r</name_type>
+      <filesize>3072</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>14</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-11-18T22:42:10Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='47616' img_offset='47616' len='3072'/>
+      </byte_runs>
+      <hashdigest type='md5'>1d468a048f337b2f10efdf92978d930a</hashdigest>
+      <hashdigest type='sha1'>4f8d5bb6da4686caeb6652be336bae4885e8cc0b</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>RICH1028.DOC</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>r</name_type>
+      <filesize>3456</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-10-28T19:19:02Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='50688' img_offset='50688' len='3456'/>
+      </byte_runs>
+      <hashdigest type='md5'>d3a82714e0a25844dc1eef791bb52001</hashdigest>
+      <hashdigest type='sha1'>06d0a6446e74cb03629bc5b5a06f1a161241e67f</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>CRI1102.DOC</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>16</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-11-02T19:59:38Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='54272' img_offset='54272' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>f03afa528ee0f52dfe4e869a5aae1f76</hashdigest>
+      <hashdigest type='sha1'>d193208e000f4cb5a58d46fa5d580f87788da9d5</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>MASTHEAD.DOC</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>r</name_type>
+      <filesize>896</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-11-03T22:50:36Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='55808' img_offset='55808' len='896'/>
+      </byte_runs>
+      <hashdigest type='md5'>9abca6cb0d6da0df90215eadcf14586a</hashdigest>
+      <hashdigest type='sha1'>c2b85eb94e0cd9838541c5a4750c438a66c34e0a</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NEWS1.DOC</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>r</name_type>
+      <filesize>32256</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>18</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-11-04T01:04:24Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='56832' img_offset='56832' len='32256'/>
+      </byte_runs>
+      <hashdigest type='md5'>d9bf876177e47c92d3155c70ae82a682</hashdigest>
+      <hashdigest type='sha1'>372860fc1c27b3f65aa1bf1a2688957bf835ebaa</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NAS12-4.DOC</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>r</name_type>
+      <filesize>1664</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>19</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-12-04T18:03:06Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='89088' img_offset='89088' len='1664'/>
+      </byte_runs>
+      <hashdigest type='md5'>d51f0764b44a8402a05faf44efb741c1</hashdigest>
+      <hashdigest type='sha1'>db9d0a798a4465cc41fde02c9462c57c14e53fcf</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>GRANT89.DOC</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>r</name_type>
+      <filesize>4608</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>20</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1989-08-10T14:27:10Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='91136' img_offset='91136' len='4608'/>
+      </byte_runs>
+      <hashdigest type='md5'>7158586d4b660002f31da1f12351afce</hashdigest>
+      <hashdigest type='sha1'>34627155c4e5e81d5ee04a6c6126a03a783cd68d</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NYPHR.DOC</filename>
+      <partition>1</partition>
+      <id>19</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>21</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-12-15T19:37:38Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='95744' img_offset='95744' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>b9222a9bed8623d7460f1551412dce69</hashdigest>
+      <hashdigest type='sha1'>8a1e07f9e8c0bc84de500dd5d57693a6c0bbd34b</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>DUNN1215.DOC</filename>
+      <partition>1</partition>
+      <id>20</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>22</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-12-15T20:04:32Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='97280' img_offset='97280' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>8bbae198ef921a309101d470f377606b</hashdigest>
+      <hashdigest type='sha1'>26b484328c32753389c0811f72453cc5e160ac1c</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>BUDGET.DOC</filename>
+      <partition>1</partition>
+      <id>21</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>23</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-24T17:27:32Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='98816' img_offset='98816' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'>f30d31b5898aad351448f1178e3d028a</hashdigest>
+      <hashdigest type='sha1'>89d26887447c1a780af49c4ef4c9eef03f8f1bf1</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>KILLEN.DOC</filename>
+      <partition>1</partition>
+      <id>22</id>
+      <name_type>r</name_type>
+      <filesize>3072</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1987-12-22T19:53:22Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='102912' img_offset='102912' len='3072'/>
+      </byte_runs>
+      <hashdigest type='md5'>5cc6a2666f9274066071253dfb7d436a</hashdigest>
+      <hashdigest type='sha1'>5e47a5f033d8711eedf0d397d4a41da5dee11d98</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>FINNERAN.DOC</filename>
+      <partition>1</partition>
+      <id>23</id>
+      <name_type>r</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-04T22:51:32Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='105984' img_offset='105984' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>81971f1c7e8c750234741636008becea</hashdigest>
+      <hashdigest type='sha1'>fd27f18a32afe256ce0494f8244b60ec14132f4b</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>TIMBO1-5.DOC</filename>
+      <partition>1</partition>
+      <id>24</id>
+      <name_type>r</name_type>
+      <filesize>3072</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>26</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-06T20:24:18Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='107520' img_offset='107520' len='3072'/>
+      </byte_runs>
+      <hashdigest type='md5'>8e32cd4d27eb59f5127fb4ea0e105da8</hashdigest>
+      <hashdigest type='sha1'>680c46ce29c755707e31505407687afaf46ee365</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>UPDLABEL.DOC</filename>
+      <partition>1</partition>
+      <id>25</id>
+      <name_type>r</name_type>
+      <filesize>4608</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-25T22:56:40Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='110592' img_offset='110592' len='4608'/>
+      </byte_runs>
+      <hashdigest type='md5'>2da7d5ebd454ef43cc92330dd22e8422</hashdigest>
+      <hashdigest type='sha1'>4c16b15b7e6baf884b01298d902c5bf87c298fb4</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>UPDINTRO.DOC</filename>
+      <partition>1</partition>
+      <id>26</id>
+      <name_type>r</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>28</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-26T00:01:50Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='115200' img_offset='115200' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>fa43fa766cc9920a852e66346f035005</hashdigest>
+      <hashdigest type='sha1'>c7f6d4ab00df61bd9193eb8e9f7b3f007ce1a09b</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NASIOM.DOC</filename>
+      <partition>1</partition>
+      <id>27</id>
+      <name_type>r</name_type>
+      <filesize>9216</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-02-10T23:03:40Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='118784' img_offset='118784' len='9216'/>
+      </byte_runs>
+      <hashdigest type='md5'>f95e7bd57604bc6d8dfcb04c5eeaafcb</hashdigest>
+      <hashdigest type='sha1'>e2dd7c5f0daf7b657ea116167fc268ba986d5b9e</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>DALGLEIS.DOC</filename>
+      <partition>1</partition>
+      <id>28</id>
+      <name_type>r</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-03-01T23:30:48Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='128000' img_offset='128000' len='2048'/>
+      </byte_runs>
+      <hashdigest type='md5'>283dd3b812b05e17c106ed195f2f5f10</hashdigest>
+      <hashdigest type='sha1'>4bc2cb3232936ebeac028282ed785f00e58bcbf4</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>BENTLEY.DOC</filename>
+      <partition>1</partition>
+      <id>29</id>
+      <name_type>r</name_type>
+      <filesize>5120</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>31</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-03-14T21:13:46Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='130048' img_offset='130048' len='5120'/>
+      </byte_runs>
+      <hashdigest type='md5'>030cc6f309c0c8e7f125b1036a5c0712</hashdigest>
+      <hashdigest type='sha1'>a5826a69cf7dcc664fb93043f0e35467a781d04d</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>RESOURCE.DOC</filename>
+      <partition>1</partition>
+      <id>30</id>
+      <name_type>r</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>32</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-03-21T18:41:00Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='135168' img_offset='135168' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>a5fd00cdfe7fc1211769c1f716f83a5e</hashdigest>
+      <hashdigest type='sha1'>158fe6a3c71bcf094a378284e30f37437604715d</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>CONGRESS.DOC</filename>
+      <partition>1</partition>
+      <id>31</id>
+      <name_type>r</name_type>
+      <filesize>11776</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>33</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-04-25T18:46:38Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='138752' img_offset='138752' len='11776'/>
+      </byte_runs>
+      <hashdigest type='md5'>b5165d5e14e3da833ba6ba294d41fd86</hashdigest>
+      <hashdigest type='sha1'>ff21601a7a2cae5cc2eba7a4e09c1eae43c78c02</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>FLEMING.DOC</filename>
+      <partition>1</partition>
+      <id>32</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>34</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-04-25T19:02:54Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='150528' img_offset='150528' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'>99810a51a545eedd2bd2d9ff1a740b78</hashdigest>
+      <hashdigest type='sha1'>1e6cc5570aa98c7a71dd047b6c250916dd5bc622</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PEABODY.DOC</filename>
+      <partition>1</partition>
+      <id>33</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>35</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-05-18T17:24:38Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='153088' img_offset='153088' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'>6ba63c18b6302a9a2d3648d58d636430</hashdigest>
+      <hashdigest type='sha1'>8f621fd8293da03ab8a66b932dc03d42077c8565</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>CLINUPD2.DOC</filename>
+      <partition>1</partition>
+      <id>34</id>
+      <name_type>r</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>36</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-05-19T21:44:32Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='155648' img_offset='155648' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>ccfe457029d19b64391f2f7759870937</hashdigest>
+      <hashdigest type='sha1'>0a208fd3238b94cc5be5ce277c6055ef374f14dd</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NYSGRANT.DOC</filename>
+      <partition>1</partition>
+      <id>35</id>
+      <name_type>r</name_type>
+      <filesize>5120</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>37</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1989-08-17T19:35:04Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='159232' img_offset='159232' len='5120'/>
+      </byte_runs>
+      <hashdigest type='md5'>c6e1198b1f9940826c9973bdbd4173d9</hashdigest>
+      <hashdigest type='sha1'>68a7d2ede4b00ad5cea0a29da9967e336bc9131c</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PEABODY2.DOC</filename>
+      <partition>1</partition>
+      <id>36</id>
+      <name_type>r</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>38</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-06-23T22:07:50Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='164352' img_offset='164352' len='2048'/>
+      </byte_runs>
+      <hashdigest type='md5'>3ad70bfc98feb9b5e507a8a51f899a32</hashdigest>
+      <hashdigest type='sha1'>475cc911bfe602ca714ae9ba97a60cc31a8037d5</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>NIHCOMM.DOC</filename>
+      <partition>1</partition>
+      <id>37</id>
+      <name_type>r</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>39</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-06-23T21:56:14Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='166400' img_offset='166400' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>666ca89fa77deaca06ad97e2b3b5692d</hashdigest>
+      <hashdigest type='sha1'>8b269bf6b0c2fd612cb79ce3bfcc508be6178277</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PROPOSAL.DOC</filename>
+      <partition>1</partition>
+      <id>38</id>
+      <name_type>r</name_type>
+      <filesize>7168</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>40</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-06-24T19:28:36Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='169984' img_offset='169984' len='7168'/>
+      </byte_runs>
+      <hashdigest type='md5'>64c332148bc7b091f303456ed0251b09</hashdigest>
+      <hashdigest type='sha1'>ac2c8ff301bdcea868183e156248db015f2db392</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>PROP-DOH.DOC</filename>
+      <partition>1</partition>
+      <id>39</id>
+      <name_type>r</name_type>
+      <filesize>7680</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>41</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-06-24T20:01:46Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='177152' img_offset='177152' len='7680'/>
+      </byte_runs>
+      <hashdigest type='md5'>07cb3170287cc0b57b049c8da29072ec</hashdigest>
+      <hashdigest type='sha1'>e5ad8fb64879326e3bf7d4fa79f6baaf5c143182</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>SYNTEX.DOC</filename>
+      <partition>1</partition>
+      <id>40</id>
+      <name_type>r</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>42</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-05T18:41:14Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='184832' img_offset='184832' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>e46cdccd5fedadd008e24de919fc94b5</hashdigest>
+      <hashdigest type='sha1'>defdee033ce79e9f0a6e365fa715eda7c653a089</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>UPDLBL2.DOC</filename>
+      <partition>1</partition>
+      <id>41</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>43</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1989-04-28T16:26:24Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='188416' img_offset='188416' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'>b563a07048b174125bdb1a21ef33d775</hashdigest>
+      <hashdigest type='sha1'>fb0860b070d50c2cfd6e124998a5730b1e3a7b05</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>OPED.DOC</filename>
+      <partition>1</partition>
+      <id>42</id>
+      <name_type>r</name_type>
+      <filesize>6656</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>44</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-10T18:12:44Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='192512' img_offset='192512' len='6656'/>
+      </byte_runs>
+      <hashdigest type='md5'>1e06f511f98a23ff75af3100219eb4f3</hashdigest>
+      <hashdigest type='sha1'>33fe02940da468dfe6e90fe669145c465e2afd6f</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>CLINUPD3.DOC</filename>
+      <partition>1</partition>
+      <id>43</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>45</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-16T17:31:16Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='199168' img_offset='199168' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'>2964b141c8d3d3d44388fbc69686e28a</hashdigest>
+      <hashdigest type='sha1'>7e2819431aeae66a18ddbeae5fc40b2fc2ba6013</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>GRANT.DOC</filename>
+      <partition>1</partition>
+      <id>44</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>46</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-04-27T16:24:08Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='345600' img_offset='345600' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'>262a938e986392bd30a21bdda49930c4</hashdigest>
+      <hashdigest type='sha1'>c60b37e661e72f5a0c552f69b45d035420f10bb7</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>MADELINE.DOC</filename>
+      <partition>1</partition>
+      <id>45</id>
+      <name_type>r</name_type>
+      <filesize>1024</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>47</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1988-08-24T18:04:10Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='207360' img_offset='207360' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'>25dd7a0ebeff0452430bfa9aaafb8396</hashdigest>
+      <hashdigest type='sha1'>f5f2a7e5d58f692f76fedf4bc7b1816039141bac</hashdigest>
+<!-- plugin_process -->

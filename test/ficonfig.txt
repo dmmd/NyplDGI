@@ -1,0 +1,1 @@
+*	dgi 	java -jar ~/Projects/NyplDGI/dist/MssDGI.jar

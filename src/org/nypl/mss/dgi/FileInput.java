@@ -111,8 +111,13 @@ public class FileInput {
         MongoConnection mc = new MongoConnection();
         Tika tika = new Tika();
         String text = tika.parseToString(file);
-        if(!text.isEmpty())
-                mc.saveContent(file.getName(), text);
+        System.out.println("tikaId: " + tika.detect(file));
+        if(!text.isEmpty()){
+            mc.saveContent(file.getName(), text);
+            System.out.println("tikaMongoExport: true");
+        } else{
+            System.out.println("tikaMongoExport: false");
+        }
     }
     
     public static void main(String[] args) throws FileNotFoundException, IOException, CommandExecutionException, UnknownHostException, TikaException{
