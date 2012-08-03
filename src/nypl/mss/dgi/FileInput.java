@@ -39,31 +39,31 @@ public class FileInput {
             IdentificationResult result = resultList.get(0);
  
             
-            System.out.println("droidMatch: true");
-            System.out.println("droidPuid: " + result.getPuid());
+            System.out.println("pronomMatch: true");
+            System.out.println("pronomPuid: " + result.getPuid());
             if(result.getMimeType() != null)
-                System.out.println("droidMimeType: " + result.getMimeType());
+                System.out.println("pronomMimeType: " + result.getMimeType());
             if(result.getName() != null)
-                System.out.println("droidFormatName: " + result.getName());
+                System.out.println("pronomFormat: " + result.getName());
             if(result.getVersion() != null)
-                System.out.println("droidFormatVersion: " + result.getVersion());
-            System.out.println("droidIdentificationMethod: binary signature" );
+                System.out.println("pronomFormatVersion: " + result.getVersion());
+            System.out.println("pronomIdentificationMethod: binary signature" );
         }
         if(resultList.isEmpty()){
             if(extResultList.isEmpty()){
-                System.out.println("droidMatch: false");
+                System.out.println("pronomMatch: false");
             }
             else{
                 IdentificationResult result = extResultList.get(0);
-                System.out.println("droidMatch: true");
-                System.out.println("droidPuid: " + result.getPuid());
+                System.out.println("pronomMatch: true");
+                System.out.println("pronomPuid: " + result.getPuid());
                 if(result.getMimeType() != null || result.getMimeType().isEmpty())
-                    System.out.println("droidMimeType: " + result.getMimeType());
+                    System.out.println("pronomMimeType: " + result.getMimeType());
                 if(result.getName() != null)
-                    System.out.println("droidFormatName: " + result.getName());
+                    System.out.println("pronomFormat: " + result.getName());
                 if(result.getVersion() != null)
-                    System.out.println("droidFormatVersion: " + result.getVersion());
-                System.out.println("droidIdentificationMethod: extension" );
+                    System.out.println("pronomFormatVersion: " + result.getVersion());
+                System.out.println("pronomIdentificationMethod: extension" );
             }
         }
     }
