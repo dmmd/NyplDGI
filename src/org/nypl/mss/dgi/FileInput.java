@@ -1,6 +1,7 @@
 package org.nypl.mss.dgi;
 
 import java.io.*;
+import java.net.UnknownHostException;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
@@ -9,6 +10,8 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.maven.wagon.CommandExecutionException;
+import org.apache.tika.Tika;
+import org.apache.tika.exception.TikaException;
 import uk.gov.nationalarchives.droid.core.interfaces.IdentificationResult;
 
 public class FileInput {
@@ -18,13 +21,18 @@ public class FileInput {
     private int port;
     private int timeout;
     
-    FileInput(String fileIn) throws FileNotFoundException, IOException, CommandExecutionException{
+    FileInput(String fileIn) throws FileNotFoundException, IOException, CommandExecutionException, UnknownHostException, TikaException{
+        BasicConfigurator.configure();
+        Logger logger = Logger.getLogger("org.apache.pdfbox.util.PDFStreamEngine");
+        logger.setLevel(Level.OFF);
+        
         this.file = new File(fileIn);
         
         if(this.file.exists()){
             //getProps();
             droid6();
             clamav();
+            tika();
         } else {
             System.exit(0);
         }
@@ -98,8 +106,16 @@ public class FileInput {
         port = Integer.parseInt(prop.getProperty("clamavPort"));
         timeout = Integer.parseInt(prop.getProperty("clamavTimeout"));
     }
+
+    private void tika() throws UnknownHostException, IOException, TikaException {
+        MongoConnection mc = new MongoConnection();
+        Tika tika = new Tika();
+        String text = tika.parseToString(file);
+        if(!text.isEmpty())
+                mc.saveContent(file.getName(), text);
+    }
     
-    public static void main(String[] args) throws FileNotFoundException, IOException, CommandExecutionException{
+    public static void main(String[] args) throws FileNotFoundException, IOException, CommandExecutionException, UnknownHostException, TikaException{
         FileInput f = new FileInput(args[0]);
-    }  
+    }
 }
